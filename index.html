@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Sejarah Indonesia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="startContainer" class="container">
+        <h2>Selamat datang di Kuis Sejarah Indonesia!</h2>
+        <label for="playerName">Masukkan Nama Anda:</label>
+        <input type="text" id="playerName" placeholder="Nama Anda">
+        <button class="startButton" onclick="startGame()">Mulai Game</button>
+    </div>
+
+    <div id="gameContainer" class="container">
+        <h2>Kuis Sejarah Indonesia</h2>
+        <p id="question"></p>
+        <div id="options">
+            <button id="optionA" class="optionButton" onclick="checkAnswer(this)">Pilihan A</button>
+            <button id="optionB" class="optionButton" onclick="checkAnswer(this)">Pilihan B</button>
+            <button id="optionC" class="optionButton" onclick="checkAnswer(this)">Pilihan C</button>
+            <button id="optionD" class="optionButton" onclick="checkAnswer(this)">Pilihan D</button>
+        </div>
+        <div id="progressBarContainer">
+            <div id="progressBar"></div>
+        </div>
+        <p id="result"></p>
+        <p id="answeredQuestions"></p>
+    </div>
+
+    <div id="gameOver" class="container">
+        <h2>Permainan Selesai</h2>
+        <p id="finalScore"></p>
+        <button id="restartButton" onclick="restartGame()">Mulai Ulang</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
